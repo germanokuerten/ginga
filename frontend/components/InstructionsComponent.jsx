@@ -1,6 +1,8 @@
+import React from "react";
 import styles from "../styles/InstructionsComponent.module.css";
 import Router, { useRouter } from "next/router";
 import MapContainer from "./MapContainer";
+
 
 export default function InstructionsComponent() {
 	const router = useRouter();
@@ -28,6 +30,15 @@ export default function InstructionsComponent() {
 					</div>
 				</a>
 			</div>  */}
+			<div>
+
+				<a
+					href="https://lenster.xyz/?text=Hello%20World!&url=https://ondarox.co&via=MyCoolApp&hashtags=lens,web3"
+					target="_blank"
+				>
+					Share to Lens
+				</a>
+			</div>
 			
 			<div>
 				<p>Made with 💙 by the Ginga team</p>
