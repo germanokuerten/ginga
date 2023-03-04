@@ -4,6 +4,9 @@ import Router, { useRouter } from "next/router";
 import MapContainer from "./MapContainer";
 
 
+
+
+
 export default function InstructionsComponent() {
 	const router = useRouter();
 	return (
