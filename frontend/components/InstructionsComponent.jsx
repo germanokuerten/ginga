@@ -17,18 +17,18 @@ export default function InstructionsComponent() {
 
 			<MapContainer></MapContainer>
 
-			<div className={styles.buttons_container}>
+			{/* <div className={styles.buttons_container}>
 				<a
 					target={"_blank"}
 					href={"https://createweb3dapp.alchemy.com/#components"}
 				>
 					<div className={styles.button}>
-						{/* <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> */}
+						 <img src="https://static.alchemyapi.io/images/cw3d/Icon%20Medium/lightning-square-contained-m.svg" width={"20px"} height={"20px"} /> 
 						<p>Map will go here</p>
 					</div>
 				</a>
-				
-			</div>
+			</div>  */}
+			
 			<div>
 				<p>Made with 💙 by the Ginga team</p>
 			</div>

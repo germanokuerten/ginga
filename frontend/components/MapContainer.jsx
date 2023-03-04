@@ -7,6 +7,7 @@ export default function MapContainer() {
     const [selected, setSelected] = useState({})
 
     const onSelect = item => {
+        console.log(item)
         setSelected(item)
     }
   
@@ -22,6 +23,8 @@ export default function MapContainer() {
   const locations = [
     {
       name: "Location 1",
+      price: "$45",
+      imgUrl: 'https://imgur.com/a/dooBuGK',
       location: { 
         lat: 39.7813353,
         lng: -104.9715600
@@ -79,13 +82,19 @@ export default function MapContainer() {
          {
             selected.location && 
             (
+            <div>
               <InfoWindow
               position={selected.location}
               clickable={true}
               onCloseClick={() => setSelected({})}
             >
-              <p>{selected.name}</p>
+            <div style={{ color: "black" }}>
+              <h1>{selected.name}</h1>
+              <h1>{selected.price}</h1>
+              <img src="https://i.imgur.com/RHFRGV6.png" width='55px' height='55px'/>
+            </div>
             </InfoWindow>
+            </div>
             )
          }
 
